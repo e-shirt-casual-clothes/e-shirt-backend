@@ -1,7 +1,7 @@
 const express = require('express');
 const bcryptjs = require('bcryptjs');
-const { Users } = require('sequelize');
-const { request } = require('express');
+const { Users } = require('../../models');
+const { Op } = require('sequelize');
 const usersRouter = express.Router();
 
 usersRouter.use(express.json());
@@ -13,6 +13,7 @@ usersRouter.get('/', async (request, response) => {
     } catch (error) {
         return response.status(500).json({ error: error.message });
     }
+
 });
 
 usersRouter.get('/search', async (request, response) => {
@@ -30,6 +31,7 @@ usersRouter.get('/search', async (request, response) => {
     } catch (error) {
         response.status(200).json({ error: error.message });
     }
+
 });
 
 usersRouter.post('/', async (request, response) => {
@@ -45,6 +47,7 @@ usersRouter.post('/', async (request, response) => {
     } catch (error) {
         return response.status(500).json({ error: error.message });
     }
+    
 });
 
 usersRouter.put('/:id', async (request, response) => {

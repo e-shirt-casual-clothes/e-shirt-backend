@@ -1,7 +1,7 @@
 const express = require ('express');
 const jwt = require ('jsonwebtoken');
 const cors = require ('cors');
-const userRouter = require ('./user.routes');
+const userRouter = require ('./users.routers');
 const sessionsRouter = require ('./sessions.routes');
 
 const routes = express.Router();
