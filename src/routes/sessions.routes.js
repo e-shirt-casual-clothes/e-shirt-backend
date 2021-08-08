@@ -25,7 +25,7 @@ sessionsRouter.post('/', async (request, response) => {
     }
     const token = jwt.sign({}, 'secret_key', {
         subject: user.id.toString(),
-        expiresIn: '1d',
+        expiresIn: '100d',
 
     });
     user.password = undefined;
