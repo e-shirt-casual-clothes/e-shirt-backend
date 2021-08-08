@@ -22,7 +22,7 @@ usersRouter.get('/search', async (request, response) => {
     try {
         if (text) {
             results = await User.findAll({
-                where: { description: { [Op.substring]: text } }
+                where: { name: { [Op.substring]: text } }
             });
         } else {
             results = await User.findAll();
