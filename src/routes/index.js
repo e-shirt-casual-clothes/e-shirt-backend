@@ -27,7 +27,7 @@ function ensureAutenticated(request, response, next) {
 
 routes.use(cors());
 routes.use('/sessions', sessionsRouter);
-/* routes.use(ensureAutenticated); */
+routes.use(ensureAutenticated);
 routes.use('/users', userRouter);
 
 module.exports = routes;
