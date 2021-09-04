@@ -12,7 +12,7 @@ function ensureAutenticated(request, response, next) {
         return response.status(403).json({
             
             
-    message:"             _____ __  __________ ______   ____________ _____ __  _____    __       ________   ____ ______  __ __  ___________ ",
+    	message:"             _____ __  __________ ______   ____________ _____ __  _____    __       ________   ____ ______  __ __  ___________ ",
 	message:"    ___     / ___// / / /  _/ __ \_  __/  / ____/ ____ \ ___// / / /   |  / /      / ____/ /  / __ \_  __/_/ // /_/ ____/ ___/    ",
 	message:"   / _ \    \__ \/ /_/ // // /_/ // /    / /   / / __ `\__ \/ / / / /| | / /      / /   / /  / / / // / /_  _  __/ __/  \__ \    ",
 	message:"   /  __/   ___/ / __  // // _, _// /    / /___/ / /_/ /__/ / /_/ / ___ |/ /___   / /___/ /___ /_/ // / /_  _  __/ /___ ___/ /    " ,
@@ -44,7 +44,7 @@ function ensureAutenticated(request, response, next) {
 	message:    "Projeto: https://e-shirt-casual-clothes.store/",
 	        
 	        
-	message:                                                                 "Dúvidas, críticas ou sugestões: contato@e-shirt-casual-clothes.store",
+	message:                                                                 "Dúvidas, críticas ou sugestões: contato@e-shirt-casual-clothes.store"
 
 
        
